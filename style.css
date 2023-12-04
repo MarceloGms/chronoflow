@@ -58,7 +58,7 @@
 
 .content h1{
   font-size: 60px;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .content p{
@@ -68,5 +68,42 @@
 }
 
 .learn-more-btn{
-  
+  background: transparent;
+  color: #fff;
+  padding: 30px 60px;
+  border-radius: 60px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  border-style: solid;
+  cursor: pointer;
+  border-color: #1a759f;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.effect{
+  background: linear-gradient(135deg, #1a759f 50%, #eddea4);
+  height: 100%;
+  width: 0;
+  border-radius: 60px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.learn-more-btn:hover .effect{
+  width: 100%;
+}
+
+.learn-more-btn:hover{
+  border: none;
+}
+
+.learn-more-btn:active{
+  margin-top: 2px;
+  margin-left: 2px;
 }
