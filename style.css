@@ -81,7 +81,13 @@
   font-size: 20px;
 }
 
-.chronoflow{
+.text-outline{
+  -webkit-text-stroke-color: #1a759f;
+  -webkit-text-stroke-width: 3px;
+  color: #eddea4;
+}
+
+.text-gradient{
   font-weight: bold;
   background: linear-gradient(135deg, #1a759f 40%, #eddea4);
   -webkit-text-fill-color: transparent; 
