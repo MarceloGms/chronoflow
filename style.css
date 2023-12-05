@@ -82,9 +82,9 @@
 }
 
 .text-outline{
-  -webkit-text-stroke-color: #1a759f;
+  -webkit-text-stroke-color: #fff;
   -webkit-text-stroke-width: 3px;
-  color: #eddea4;
+  color: transparent;
 }
 
 .text-gradient{
