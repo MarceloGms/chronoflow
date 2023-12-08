@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chronoflow</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <script src="script.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,13 +12,20 @@
 </head>
 <body>
   <div class="banner">
+
     <div class="navbar">
       <img class="logo" src="assets/logo.png" alt="Chronoflow logo">
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <label class="hamburger">
+        <input type="checkbox">
+      </label>
+      <aside class="sidebar">
+        <nav>
+          <div class="sidebar-item" onclick="scrollToAbout()">About</div>
+          <div class="sidebar-item" onclick="scrollToFAQ()">FAQ</div>
+          <div class="sidebar-item" onclick="scrollToOurTeam()">Our Team</div>
+          <div class="sidebar-item" onclick="scrollToContactUs()">Contact us</div>
+        </nav>
+      </aside>
       <ul>
         <li><a onclick="scrollToAbout()">About</a></li>
         <li><a onclick="scrollToFAQ()">FAQ</a></li>
@@ -26,6 +33,7 @@
         <li><a onclick="scrollToContactUs()">Contact us</a></li>
       </ul>
     </div>
+    
     <div class="content">
       <h1>Create your <span class="text-outline">schedule</span> with <span class="text-gradient">one click.</span></h1>
       <p>With <span class="text-gradient">Chronoflow</span> you can easily generate a schedule based on your preferences
@@ -34,7 +42,9 @@
         <button class="learn-more-btn" onclick="scrollToAbout()"><span class="effect"></span>Learn more</button>
       </div>
     </div>
+
   </div>
+
   <div>
     <p>
     <h1 id="about">What is Chronoflow?</h1>
