@@ -93,6 +93,25 @@
 	background: linear-gradient(135deg, #1a759f 40%, #eddea4);
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
+	background-clip: text;
+}
+
+/* mete a cor que quiseres wee*/
+.title-color {
+	font-weight: bold;
+	background: linear-gradient(135deg, #1a759f 40%, #eddea4);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+
+/* mete a cor que quiseres wee*/
+.text-color {
+	font-weight: bold;
+	background: linear-gradient(135deg, #1a759f 40%, #eddea4);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
 }
 
 .learn-more-btn {
