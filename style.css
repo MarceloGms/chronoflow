@@ -188,11 +188,6 @@
 	.learn-more-btn {
 		padding: 20px 40px;
 		font-size: 25px;
-		margin-top: 40px;
-	}
-
-	.learn-more-btn:active {
-		margin-top: 42px;
 	}
 }
 
