@@ -205,8 +205,8 @@
 }
 
 .sidebar {
-	transition: translate var(--animation-timing);
-	translate: 100%;
+	transition: opacity var(--animation-timing);
+	opacity: 0;
 	padding: 0.5rem 6rem;
 	padding-top: calc(var(--hamburger-height) + 8rem);
 	position: absolute;
@@ -217,6 +217,10 @@
 	border-radius: 20px;
 	max-width: 10rem;
 	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 .sidebar-item {
@@ -225,12 +229,13 @@
 	color: var(--foreground);
 	font-size: 1.5rem;
 	font-weight: bold;
-	margin: 1rem 0;
+	margin: 2rem 0;
 	cursor: pointer;
+	transform: translateY(-100%);
 }
 
 .hamburger:has(input:checked) + .sidebar {
-	translate: 0;
+	opacity: 1;
 }
 
 /* xs */
