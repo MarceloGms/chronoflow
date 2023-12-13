@@ -245,6 +245,17 @@
 		url(assets/circle-scatter-haikei\(3\).svg);
 	background-size: contain;
 	background-position: center;
+	text-align: center;
+}
+
+.about h1 {
+	line-height: 250px;
+	font-size: 4rem;
+	margin-bottom: 20px;
+}
+
+.about h2 {
+	line-height: 50px;
 }
 
 .faq {
@@ -256,12 +267,36 @@
 	background-position: center;
 }
 
+.empty-paragraph {
+	height: 2rem;
+}
+
+.bold-and-large {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.large {
+	font-size: 1.5rem;
+}
+
 .our-team {
 	width: 100%;
 	height: 100vh;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
 		url(assets/circle-scatter-haikei.svg);
 	background-size: contain;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.boiola {
+	width: 100%;
+	height: 130vh;
+	background-color: #caf0f8;
+	background-size: cover;
 	background-position: center;
 	display: flex;
 	justify-content: center;
