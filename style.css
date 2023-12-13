@@ -239,14 +239,31 @@
 }
 
 .about {
+	
 	width: 100%;
 	height: 100vh;
-	background-image: url(assets/low-poly-grid-haikei.svg);
+	color: #fff;
+	transform: tranaslateY(-50%);
+	background-color: rgb(8, 8, 23);
 	background-size: cover;
 	background-position: center;
 	text-align: center;
 	
 }
+
+
+.about h1 {
+	line-height: 250px;
+	font-size: 4rem;
+	margin-bottom: 20px;
+}
+
+.about h2 {
+	line-height: 50px;
+	
+}
+
+
 
 .faq {
 	width: 100%;
