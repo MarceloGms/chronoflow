@@ -254,9 +254,33 @@
 	background-position: center;
 }
 
+.empty-paragraph {
+	height: 2rem;
+  }
+
+.bold-and-large {
+	font-size: 1.5rem; 
+	font-weight: bold; 
+}
+  
+.bold {
+	font-size: 1.5rem; 
+	}
+
 .our-team {
 	width: 100%;
 	height: 100vh;
+	background-color: #caf0f8;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.boiola {
+	width: 100%;
+	height: 130vh;
 	background-color: #caf0f8;
 	background-size: cover;
 	background-position: center;
