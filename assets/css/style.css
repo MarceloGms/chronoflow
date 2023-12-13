@@ -24,7 +24,7 @@
 	width: 100%;
 	height: 100vh;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-		url(assets/background.png);
+		url(../backgrounds/background.png);
 	background-size: cover;
 	background-position: center;
 }
@@ -242,49 +242,31 @@
 	width: 100%;
 	height: 100vh;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.45)),
-		url(assets/circle-scatter-haikei\(3\).svg);
+		url(../backgrounds/circle-scatter-haikei\(3\).svg);
 	background-size: contain;
 	background-position: center;
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.about h1 {
-	line-height: 250px;
-	font-size: 4rem;
-	margin-bottom: 20px;
-}
-
-.about h2 {
+.about p {
+	font-size: 2rem;
 	line-height: 50px;
+}
+
+.about .card,
+.faq .card {
+	margin-right: 10rem;
+	margin-left: 10rem;
 }
 
 .faq {
 	width: 100%;
 	height: 100vh;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-		url(assets/circle-scatter-haikei\(2\).svg);
-	background-size: contain;
-	background-position: center;
-}
-
-.empty-paragraph {
-	height: 2rem;
-}
-
-.bold-and-large {
-	font-size: 1.5rem;
-	font-weight: bold;
-}
-
-.large {
-	font-size: 1.5rem;
-}
-
-.our-team {
-	width: 100%;
-	height: 100vh;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-		url(assets/circle-scatter-haikei.svg);
+		url(../backgrounds/circle-scatter-haikei\(2\).svg);
 	background-size: contain;
 	background-position: center;
 	display: flex;
@@ -292,11 +274,39 @@
 	align-items: center;
 }
 
-.boiola {
+.question {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.faq-item {
+	cursor: pointer;
+	margin: 10px 0;
+	padding: 10px;
+	border: 2px solid #1a759f;
+	border-radius: 10px;
+	transition: background-color 0.3s;
+}
+
+.faq-item:hover {
+	background-color: #f2f2f2;
+}
+
+.answer {
+	display: none;
+	font-size: 1.5rem;
+}
+
+.card .answer.show {
+	display: block;
+}
+
+.our-team {
 	width: 100%;
-	height: 130vh;
-	background-color: #caf0f8;
-	background-size: cover;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+		url(../backgrounds/circle-scatter-haikei.svg);
+	background-size: contain;
 	background-position: center;
 	display: flex;
 	justify-content: center;
@@ -307,9 +317,12 @@
 	width: 100%;
 	height: 100vh;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85)),
-		url(assets/circle-scatter-haikei\(1\).svg);
+		url(../backgrounds/circle-scatter-haikei\(1\).svg);
 	background-size: contain;
 	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .card {
@@ -422,6 +435,7 @@
 
 	.header {
 		font-size: 2rem;
+		margin-bottom: 1rem;
 	}
 
 	.card {
@@ -433,6 +447,17 @@
 	.faq,
 	.contact-us {
 		background-size: cover;
+	}
+
+	.about .card,
+	.faq .card {
+		margin-right: 1rem;
+		margin-left: 1rem;
+	}
+
+	.about p {
+		font-size: 1.1rem;
+		line-height: 26px;
 	}
 }
 

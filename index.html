@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chronoflow</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="assets/js/script.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
   <div class="banner">
 
     <div class="navbar">
-      <img class="logo" src="assets/logo.png" alt="Chronoflow logo">
+      <img class="logo" src="assets/icons/logo.png" alt="Chronoflow logo">
       <label class="hamburger">
         <input type="checkbox">
       </label>
@@ -45,45 +45,44 @@
 
   </div>
 
-  <div class="about">
-    <p>
-    <h1 id="about">What is <span class="text-gradient">Chronoflow </span>?</h1>
-    <h2 id="proposition1">
-      <span class="text-gradient">Chronoflow </span> is a software that suggests personalized schedules based on student preferences.
-    </h2>
-    <h2 id="proposition2">
-      It is meant for any students who need help creating schedules and who are dissatisfied with the manual process of selecting the combination of
-      class periods. 
-    </h2>
-    <h2 id="proposition3">
-      Without having to plan schedules manually, this software serves as a tool to help you plan the <span class="text-gradient">ideal time! </span>
-    </p>
-  </div>
-
-  <div id="team" class="boiola">
+  <div id="about" class="about">
     <div class="card">
-      <h1>FAQ</h1>
-      <p class="empty-paragraph"></p>
-      <p class="bold-and-large">Q: What is the purpose of this application?<br>
-      <p class="large">A: To create optimized schedules quickly</p>
-         <p class="empty-paragraph"></p>
-         <p class="empty-paragraph"></p>
-      <p class="bold-and-large">Q: Who are we?<br>
-      <p class="large">A: We are Computer Engineering students at the University of Coimbra.</p>
-         <p class="empty-paragraph"></p>
-         <p class="empty-paragraph"></p>
-      <p class="bold-and-large">Q: What are the filters for?<br>
-      <p class="large">A: Filters are used to specify certain preferences in some or all parts of the schedule.</p>
-         <p class="empty-paragraph"></p>
-         <p class="empty-paragraph"></p>
-      <p class="bold-and-large">Q: How do I generate schedules?<br>
-      <p class="large">A: Once you have selected the relevant filters, simply click on the generate schedule button and a schedule will be displayed.</p>
-         <p class="empty-paragraph"></p>
-         <p class="empty-paragraph"></p>
-      <p class="bold-and-large">Q: How many schedules can be generated for the same person?<br>
-      <p class="large">A: All possible variations can be displayed. By clicking on the generate schedule button, a new schedule will be generated.</p>
+      <h1 class="header">What is <span class="text-gradient">Chronoflow</span>?</h1>
+      <p>
+        <span class="text-gradient">Chronoflow </span> is a software that suggests personalized schedules based on student preferences.
+        It's meant for any students who need help creating schedules and who are dissatisfied with the manual process of selecting the combination of
+        class periods. 
+        Without having to plan schedules manually, this software serves as a tool to help you plan the <span class="text-gradient">ideal time! </span>
+      </p>
     </div>
   </div>
+
+  <div id="faq" class="faq">
+    <div class="card">
+      <h1 class="header">Frequently asked questions</h1>
+      <div class="faq-item" onclick="toggleAnswer(this)">
+        <p class="question">What is the purpose of this application?</p>
+        <p class="answer">To create optimized schedules quickly</p>
+      </div>
+      <div class="faq-item" onclick="toggleAnswer(this)">
+        <p class="question">Who are we?</p>
+        <p class="answer">We are group of Computer Engineering students.</p>
+      </div>
+      <div class="faq-item" onclick="toggleAnswer(this)">
+        <p class="question">What are the filters for?</p>
+        <p class="answer">Filters are used to specify certain preferences in some or all parts of the schedule.</p>
+      </div>
+      <div class="faq-item" onclick="toggleAnswer(this)">
+        <p class="question">How do I generate schedules?</p>
+        <p class="answer">Once you have selected the relevant filters, simply click on the generate schedule button and a schedule will be displayed.</p>
+      </div>
+      <div class="faq-item" onclick="toggleAnswer(this)">
+        <p class="question">How many schedules can be generated for the same person?</p>
+        <p class="answer">All possible variations can be displayed. By clicking on the generate schedule button, a new schedule will be generated.</p>
+      </div>
+    </div>
+  </div>
+
   
 
 
@@ -92,31 +91,31 @@
       <h1 class="header">Meet our team</h1>
       <div class="profiles">
         <div class="profile">
-          <img class="foto" src="assets/20231212_124356.jpg">
+          <img class="foto" src="assets/photos/20231212_124356.jpg">
           <p class="profile-name">Simão Moreira</p>
         </div>
         <div class="profile">
-          <img class="foto" src="assets/20231212_124753.jpg">
+          <img class="foto" src="assets/photos/20231212_124753.jpg">
           <p class="profile-name">Marco Lucas</p>
         </div>
         <div class="profile">
-          <img class="foto" src="assets/27fac559-84b7-46d7-a50d-c6de720ca86f.jpg">
+          <img class="foto" src="assets/photos/27fac559-84b7-46d7-a50d-c6de720ca86f.jpg">
           <p class="profile-name">Miguel Moreira</p>
         </div>
         <div class="profile">
-          <img class="foto" src="assets/IMG_20210522_134904_331.jpg">
+          <img class="foto" src="assets/photos/IMG_20210522_134904_331.jpg">
           <p class="profile-name">Marcelo Gomes</p>
         </div>
         <div class="profile">
-          <img class="foto" src="assets/Screenshot_20231212_133153_Gallery.jpg">
+          <img class="foto" src="assets/photos/Screenshot_20231212_133153_Gallery.jpg">
           <p class="profile-name">Rui Vidal</p>
         </div>
         <div class="profile">
-          <img class="foto" src="assets/IMG_0617.jpg">
+          <img class="foto" src="assets/photos/IMG_0617.jpg">
           <p class="profile-name">Lucas Miguel</p>
         </div>
         <div class="profile">
-          <img class="foto" src="assets/background.png">
+          <img class="foto" src="assets/backgrounds/background.png">
           <p class="profile-name">Pedro Brites</p>
         </div>
       </div>
@@ -124,12 +123,14 @@
   </div>
 
 
-  <div class="contact-us">
-    <p>
-    <h1 id="contact">Contact us</h1>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, hic? Architecto minus eveniet magni, repellendus
-    </p>
-    <a href="https://www.instagram.com/chronoflow_/">Insta</a>
+  <div id="contact" class="contact-us">
+    <div class="card">
+      <p>
+      <h1 class="header">Contact us</h1>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, hic? Architecto minus eveniet magni, repellendus
+      </p>
+      <a href="https://www.instagram.com/chronoflow_/">Insta</a>
+    </div>
   </div>
 </body>
 </html>
