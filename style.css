@@ -241,24 +241,27 @@
 .about {
 	width: 100%;
 	height: 100vh;
-	background-image: url(assets/low-poly-grid-haikei.svg);
-	background-size: cover;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.45)),
+		url(assets/circle-scatter-haikei\(3\).svg);
+	background-size: contain;
 	background-position: center;
 }
 
 .faq {
 	width: 100%;
 	height: 100vh;
-	background-image: url(assets/low-poly-grid-haikei.svg);
-	background-size: cover;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+		url(assets/circle-scatter-haikei\(2\).svg);
+	background-size: contain;
 	background-position: center;
 }
 
 .our-team {
 	width: 100%;
 	height: 100vh;
-	background-color: #caf0f8;
-	background-size: cover;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+		url(assets/circle-scatter-haikei.svg);
+	background-size: contain;
 	background-position: center;
 	display: flex;
 	justify-content: center;
@@ -268,19 +271,61 @@
 .contact-us {
 	width: 100%;
 	height: 100vh;
-	background-color: #caf0f8;
-	background-size: cover;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85)),
+		url(assets/circle-scatter-haikei\(1\).svg);
+	background-size: contain;
 	background-position: center;
 }
 
 .card {
 	display: inline-block;
-	padding: 10px 60px 500px 60px;
-	border-style: solid;
-	border-width: 6px;
+	padding: 4rem;
+	background: linear-gradient(white, white) padding-box,
+		linear-gradient(to right, #eddea4, #1a759f) border-box;
 	border-radius: 20px;
-	border-color: #fff;
+	border: 4px solid transparent;
 	text-align: center;
+	background-color: #fff;
+}
+
+.header {
+	font-size: 4rem;
+	font-weight: bold;
+	margin-bottom: 2rem;
+	color: rgba(0, 0, 0, 0.75);
+}
+
+.foto {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.profiles {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(150px, 1fr));
+	gap: 40px;
+}
+
+.profile {
+	text-align: center;
+	cursor: pointer;
+	transition: box-shadow 0.3s ease-in-out;
+	border-radius: 10px;
+	padding: 4px;
+}
+
+.profile:hover {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.profile-name {
+	margin-top: 4px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.75);
 }
 
 /* xs */
@@ -323,6 +368,36 @@
 
 	.hamburger {
 		margin-right: 24px;
+	}
+
+	.foto {
+		width: 80px;
+		height: 80px;
+	}
+
+	.profiles {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(80px, 1fr));
+		gap: 10px;
+	}
+
+	.profile-name {
+		font-size: 0.8rem;
+	}
+
+	.header {
+		font-size: 2rem;
+	}
+
+	.card {
+		padding: 2rem;
+	}
+
+	.our-team,
+	.about,
+	.faq,
+	.contact-us {
+		background-size: cover;
 	}
 }
 
