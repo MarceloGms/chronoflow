@@ -14,6 +14,14 @@ function scrollToContactUs() {
 	document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
 }
 
+window.onload = function() {
+	const card = document.querySelector('.faq .card');
+	const cardWidth = window.getComputedStyle(card).width;
+	const cardHeight = window.getComputedStyle(card).height;
+	card.style.width = cardWidth;
+	card.style.height = cardHeight;
+};
+
 function toggleAnswer(element) {
 	var faqItems = document.querySelectorAll(".faq-item");
 
@@ -25,3 +33,4 @@ function toggleAnswer(element) {
 
 	element.querySelector(".answer").classList.toggle("show");
 }
+
