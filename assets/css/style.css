@@ -239,6 +239,17 @@
 	opacity: 1;
 }
 
+.card {
+	display: inline-block;
+	padding: 4rem;
+	background: linear-gradient(white, white) padding-box,
+		linear-gradient(to right, #eddea4, #1a759f) border-box;
+	border-radius: 20px;
+	border: 4px solid transparent;
+	text-align: center;
+	background-color: #fff;
+}
+
 .about {
 	width: 100%;
 	height: 100vh;
@@ -281,6 +292,7 @@
 	padding: 10px;
 	border: 2px solid #1a759f;
 	border-radius: 10px;
+	background-color: #fff;
 	transition: background-color 0.3s;
 }
 
@@ -326,17 +338,6 @@
 	align-items: center;
 }
 
-.card {
-	display: inline-block;
-	padding: 4rem;
-	background: linear-gradient(white, white) padding-box,
-		linear-gradient(to right, #eddea4, #1a759f) border-box;
-	border-radius: 20px;
-	border: 4px solid transparent;
-	text-align: center;
-	background-color: #fff;
-}
-
 .header {
 	font-size: 4rem;
 	font-weight: bold;
@@ -375,6 +376,58 @@
 	font-size: 1.2rem;
 	font-weight: bold;
 	color: rgba(0, 0, 0, 0.75);
+}
+
+.contact-us .card {
+	margin-right: 20rem;
+	margin-left: 20rem;
+}
+
+#logo-ig {
+	width: 50px;
+	height: 50px;
+}
+
+.copyright {
+	position: relative;
+	bottom: 0;
+	margin-top: 20px;
+	font-size: 20px;
+	line-height: 20px;
+	color: rgba(0, 0, 0, 0.75);
+}
+
+.aviso-legal {
+	font-size: 1rem;
+	color: rgba(0, 0, 0, 0.5);
+	display: inline-block;
+}
+
+.socials {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 2rem;
+}
+
+.insta {
+	text-decoration: none;
+	position: relative;
+	bottom: 0;
+	margin-top: 20px;
+	font-size: 20px;
+	line-height: 20px;
+	color: rgba(0, 0, 0, 0.75);
+}
+
+.insta-container {
+	display: flex;
+	align-items: center;
+}
+
+.insta span {
+	margin-left: auto;
 }
 
 /* xs */
@@ -420,14 +473,14 @@
 	}
 
 	.foto {
-		width: 80px;
-		height: 80px;
+		width: 100px;
+		height: 100px;
 	}
 
 	.profiles {
 		display: grid;
-		grid-template-columns: repeat(2, minmax(80px, 1fr));
-		gap: 10px;
+		grid-template-columns: repeat(2, minmax(100px, 1fr));
+		gap: 26px;
 	}
 
 	.profile-name {
@@ -460,12 +513,285 @@
 		font-size: 1.1rem;
 		line-height: 26px;
 	}
+
+	.question {
+		font-size: 1.2rem;
+	}
+
+	.answer {
+		font-size: 1.2rem;
+	}
+
+	.insta {
+		font-size: 0.8rem;
+	}
+
+	#logo-ig {
+		width: 30px;
+		height: 30px;
+	}
+
+	.aviso-legal {
+		font-size: 0.8rem;
+	}
+
+	.copyright {
+		font-size: 0.8rem;
+	}
+
+	.insta span {
+		margin-right: 2rem;
+	}
 }
 
+@media ((max-height: 768px) and (max-width: 475px)) {
+	.question {
+		font-size: 1rem;
+	}
+
+	.answer {
+		font-size: 1rem;
+	}
+
+	.foto {
+		width: 80px;
+		height: 80px;
+	}
+
+	.profiles {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(80px, 1fr));
+		gap: 16px;
+	}
+}
 /* sm */
-@media (max-width: 640px) {
+@media ((min-width: 476px) and (max-width: 640px)) {
+	.logo {
+		width: 150px;
+		height: 150px;
+	}
+
+	.content h1 {
+		font-size: 3.2rem;
+		margin: 0 10px;
+	}
+
+	.content p {
+		font-size: 1.4rem;
+		margin: 20px 10px;
+	}
+
+	.hamburger {
+		display: flex;
+	}
+
+	.navbar ul {
+		order: 1;
+	}
+
+	.navbar ul li {
+		display: none;
+	}
+
+	.navbar {
+		width: 100%;
+	}
+
+	.learn-more-btn {
+		padding: 30px 50px;
+		font-size: 40px;
+	}
+
+	.hamburger {
+		margin-right: 30px;
+	}
+
+	.foto {
+		width: 130px;
+		height: 130px;
+	}
+
+	.profiles {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(130px, 1fr));
+		gap: 26px;
+	}
+
+	.profile-name {
+		font-size: 1.1rem;
+	}
+
+	.header {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.card {
+		padding: 2rem;
+	}
+
+	.our-team,
+	.about,
+	.faq,
+	.contact-us {
+		background-size: cover;
+	}
+
+	.about .card,
+	.faq .card {
+		margin-right: 1rem;
+		margin-left: 1rem;
+	}
+
+	.about p {
+		font-size: 1.6rem;
+		line-height: 32px;
+	}
+
+	.question {
+		font-size: 1.6rem;
+	}
+
+	.answer {
+		font-size: 1.6rem;
+	}
+
+	.insta {
+		font-size: 1.2rem;
+	}
+
+	#logo-ig {
+		width: 30px;
+		height: 30px;
+	}
+
+	.aviso-legal {
+		font-size: 1.2rem;
+	}
+
+	.copyright {
+		font-size: 1.2rem;
+	}
+
+	.insta span {
+		margin-right: 2rem;
+	}
 }
 
 /* md */
 @media (max-width: 768px) {
+}
+
+/* lg */
+@media ((min-width: 641px) and (max-width: 1024px)) {
+	.logo {
+		width: 150px;
+		height: 150px;
+	}
+
+	.content h1 {
+		font-size: 3.2rem;
+		margin: 0 10px;
+	}
+
+	.content p {
+		font-size: 1.4rem;
+		margin: 20px 10px;
+	}
+
+	.hamburger {
+		display: flex;
+	}
+
+	.navbar ul {
+		order: 1;
+	}
+
+	.navbar ul li {
+		display: none;
+	}
+
+	.navbar {
+		width: 100%;
+	}
+
+	.learn-more-btn {
+		padding: 30px 50px;
+		font-size: 40px;
+	}
+
+	.hamburger {
+		margin-right: 30px;
+	}
+
+	.foto {
+		width: 150px;
+		height: 150px;
+	}
+
+	.profiles {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(150px, 1fr));
+		gap: 26px;
+	}
+
+	.profile-name {
+		font-size: 1.1rem;
+	}
+
+	.header {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.card {
+		padding: 2rem;
+	}
+
+	.our-team,
+	.about,
+	.faq,
+	.contact-us {
+		background-size: cover;
+	}
+
+	.about .card,
+	.faq .card {
+		margin-right: 1rem;
+		margin-left: 1rem;
+	}
+
+	.about p {
+		font-size: 1.6rem;
+		line-height: 32px;
+	}
+
+	.question {
+		font-size: 1.6rem;
+	}
+
+	.answer {
+		font-size: 1.6rem;
+	}
+
+	.insta {
+		font-size: 1.4rem;
+	}
+
+	#logo-ig {
+		width: 30px;
+		height: 30px;
+	}
+
+	.aviso-legal {
+		font-size: 1.4rem;
+	}
+
+	.copyright {
+		font-size: 1.4rem;
+	}
+
+	.insta span {
+		margin-right: 2rem;
+	}
 }
